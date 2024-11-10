@@ -3,7 +3,7 @@
 export default function Home() {
 
   var styleObj = {
-    "background": "white"
+    "background": "black"
   }
 
   return (
