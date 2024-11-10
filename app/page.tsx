@@ -3,7 +3,9 @@
 export default function Home() {
 
   const styleObj = {
-    "backgroundColor": "black"
+    "backgroundColor": "black",
+    "Color": "white"
+    
   }
 
   return (
