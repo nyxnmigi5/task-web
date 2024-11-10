@@ -2,8 +2,8 @@
 
 export default function Home() {
 
-  var styleObj = {
-    "background": "black"
+  const styleObj = {
+    "backgroundColor": "black"
   }
 
   return (
