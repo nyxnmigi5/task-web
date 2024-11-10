@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <div>
       {/* {HTML 태그처럼 쓸 수 있음} */}
-      <MyButton name="jimin"/>
+      <MyButton name="jimin" nickname="hioCoffee" age={18} today={new Date()}/>
       {/* <MyButton/>
       <MyButton/>
       <MyButton/> */}
@@ -21,8 +21,15 @@ export default function Home() {
 
 type TParams = {
   name: string
+  nickname: string
+  age: number
+  today: Date
 }
 
 function MyButton(params: TParams){
-  return<button>I am {params.name}</button>
+  return(
+  <div className="bg-red-500 text-3xl w-[100px]" style={{backgroundColor: 'rgb(203 213 225)'}}>
+      I am {params.name}. my nickanme is {params.nickname}. my age is {params.age}. {params.today.getDate()}
+  </div>
+  )
 }
