@@ -1,20 +1,13 @@
-
-
 export default function Home() {
-
-  const styleObj = {
-    "backgroundColor": "black",
-    "color": "white"
-    
-  }
-
   return (
     <div>
-      <p>
-        hello, 2024-11-09 <b>가나다</b><br/>
-        <b>석원쌤 S2</b>
-      </p>
-      <button type = "button" style = {styleObj}>버튼</button>
+      {/* {HTML 태그처럼 쓸 수 있음} */}
+      <MyButton/>
     </div>
   );
+}
+
+// <button>I am button</button>을 생성하는 JS 함수
+function MyButton(){
+  return<button>I am a button!!</button>
 }
